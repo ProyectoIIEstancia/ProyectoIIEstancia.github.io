@@ -1,14 +1,31 @@
 body{
-    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 section{
+    
     background-color: #77b21a;
     border-radius: 10px;
     text-align: center;
+    width: 100%;
 }
 div{
     text-align: center;
 }
 img{
     width: 300px;
+}
+form{
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #ebf2e2;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
