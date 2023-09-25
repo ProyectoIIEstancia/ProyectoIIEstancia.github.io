@@ -1,4 +1,4 @@
-{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,10 +8,102 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: center;
+    height: 100vh;
 }
 
+header{
+    background-color: black;
+
+}
+
+.container{
+    padding: 28px 0;
+    background-color: black;
+}
+
+.menu{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+  width: 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffff;
+    display: block;
+    font-family: "AwanZaman Heavy";
+}
+
+.menu .navbar ul li a:hover{
+    color: #15a4f9;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: initial;
+}
+
+
+
+/*responsive logo*/
+@media(max-width:2200px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 39px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    }
+
+/*funcion de inicio de sesion*/
+main{
+    align-items: center;
+    display: flex;
+}
+
+
 .container-form {
+    border: solid red;
     display: flex;
     border-radius: 20px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
@@ -19,8 +111,8 @@ body{
     max-width: 900px;
     transition: all 1s ease;
     border: solid thin #eef3e5;
-    margin: 10px;
-
+    align-content: center;
+    justify-content: center;
 }
 
 .information {
@@ -137,8 +229,12 @@ transition: background-color .3s ease;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
 }
 
-/*responsive form*/
 
+
+
+
+
+/*responsive form*/
 @media screen and (max-widht:750px) {
 html{
     font-size: 12px;
@@ -162,6 +258,7 @@ html{
     border-bottom-left-radius: 0px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
     }
 }
 
@@ -169,10 +266,10 @@ html{
     width: 100%;
     padding: 20px;
     border-bottom-left-radius:20px ;
-    border-bottom-right-radius: 0;
-
-
+    border-top-right-radius: 0;
 }
+
+
 
 
 
