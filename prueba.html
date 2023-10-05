@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nuevo.css">
+    <link rel="stylesheet" href="PRUEBA.JS">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" class="ctrl modal" id="ctrl-modal">
+    <input type="checkbox" class="ctrl notificacion" id="ctrl-notificacion">
+    <div class="grupo contenedor">
+
+        <!-- SECCIÓN DE MENU -->
+        <nav class="grupo menu lateral">
+            <figure class="logo ita">
+            </figure>
+    
+            <ul class="menu grupo archivos publicos">
+                <li class="item reporte-diario">
+                    <a class="enlace icon-fa" href="#">VINCULACION</a>
+                </li>
+                <li class="item archivos-ita">
+                    <a class="enlace icon-fa " href="#">ARCHIVOS</a>
+                </li>
+            </ul>
+            <ul class="menu grupo archivos privados">
+                <li class="item mi-maletin activo">
+                    <a class="enlace icon-fa" href="#">HORARIOS</a>
+                </li>
+                <li class="item archivo reciente">
+                    <a class="enlace icon-fa" href="#">RECIENTES</a>
+                </li>
+                <li class="item favoritos">
+                    <a class= "enlace icon-fa" href="#">IMPORTANTES</a>
+                </li>
+                <li class="item notas">
+                    <a class="enlace icon-fa focus" href="#">NOTAS RAPIDAS</a>
+                </li>
+                <li class="item proyectos">
+                    <a class="enlace icon-fa desactivar" href="#">PROYECTOS</a>
+                </li>
+            </ul>
+        </nav><!-- MENU LATERAL -->
+
+        <main class="grupo contenido">
+    
+            <heade r class="menu grupo enlinea superior">
+                <!-- SUBIR ARCHIVOS SECCIÓN -->
+                <section class="enlineado grupo enlinea menu-subida un-boton">
+                    <div class="grupo enlinea enlineado gestion archivos propios">
+                        <button class="boton enlineado icon-fa subir-archivo" id="subir-archivo">
+                            SUBIR ARCHIVO
+                        </button>
+                        <input type="file" id="archivo-input" style="display: none;"> <!-- SUBIR ARCHIVOS -->
+                        <button class="boton enlineado icon-fa subir-carpeta" id="subir-carpeta">SUBIR CARPETA</button>
+                    </div>
+                    <label class="grupo enlineado input buscar enlineado icon-fa">
+                        <input class="input text buscador" id="buscador-general" type="text" placeholder="BUSCAR ARCHIVO">
+                    </label>
+                </section>
+                <!-- SECCIÓN DE PERFIL -->
+                <section class="enlineado grupo enlinear menu-derecha">
+                    <div class="grupo panel usuario">
+                        <a href="#" class="cerrar"></a>
+                        <a href="#" class="enlace usuario enlineado icon-fa-despues flecha-derecha"><!-- PERFIL -->
+                            <figure class="marco-foto perfil icon-fa" data-mote="EG">
+                                <img class="foto usuario" src="descarga.PNG" alt="EG">
+                            </figure>
+                            <span class="nombre enlace">BRAYAN CRUZ CARDONA</span>              
+                        </a>
+                        <ul class="grupo submenu usuario enlineado">
+                            <li class="item opcion icon-fa-despues desconectar">
+                                <a href="#" class="enlace logout"> Desconectar </a>
+                            </li>
+                        </ul>			
+                    </div>
+                </section>	
+            </header><!-- MENU SUPERIOR -->
+
+            <div class="marco archivos-ita">
+                <!-- DIV DE UBICACIÓN -->
+                <div class="grupo migaja-pan">
+                    <b class="titulo">UBICACIÓN:</b> <span class="ubicacion raiz">INICIO</span> > <span class="ubicacion nivel 1">CARPETA</span>
+                </div>
+
+                <!-- SECCIÓN DE LEYENDA DE ARCHIVOS -->
+                <section class="detalles grupo enlinea">
+                    <p class="enlineado icon-fa flecha-orden ordena-menor nombre">Nombre</p>
+                    <div class="grupo-descripcion">
+                        <p class="enlineado icon-fa flecha-orden modificacion">Modificado</p>
+                        <p class="enlineado icon-fa flecha-orden creador">Propietario</p>
+                        <p class="enlineado icon-fa flecha-orden compartido">Compartido con</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
